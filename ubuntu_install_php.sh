@@ -1,24 +1,24 @@
 phpVersion="Lastest"
 separateLine="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-echo "[Script - PHP - $phpVersion] Installation de PHP $phpVersion sur Ubuntu 22.04"
+echo "[Script - PHP & Composer - $phpVersion] Installation de PHP $phpVersion sur Ubuntu 22.04"
 echo $separateLine
-echo "[Script - PHP - $phpVersion] Mise à jour des dépôts"
-echo $separateLine
-sudo apt update && apt upgrade
-echo $separateLine
-echo "[Script - PHP - $phpVersion] Mise à jour des dépôts"
+echo "[Script - PHP & Composer - $phpVersion] Mise à jour des dépôts"
 echo $separateLine
 sudo apt update && apt upgrade
 echo $separateLine
-echo "[Script - PHP - $phpVersion] Installation des prérequis"
+echo "[Script - PHP & Composer - $phpVersion] Mise à jour des dépôts"
+echo $separateLine
+sudo apt update && apt upgrade
+echo $separateLine
+echo "[Script - PHP & Composer - $phpVersion] Installation des prérequis"
 echo $separateLine
 sudo apt install curl wget git tree nano zip unzip libpcre3
 echo $separateLine
-echo "[Script - PHP - $phpVersion] Nettoyage des précédentes versions de PHP"
+echo "[Script - PHP & Composer - $phpVersion] Nettoyage des précédentes versions de PHP"
 echo $separateLine
 sudo apt-get purge 'php*'
 echo $separateLine
-echo "[Script - PHP - $phpVersion] Installation de PHP $phpVersion"
+echo "[Script - PHP & Composer - $phpVersion] Installation de PHP $phpVersion"
 echo $separateLine
 sudo apt -y install php
 sudo apt -y install php-amqp
@@ -49,10 +49,14 @@ sudo apt -y install php-xdebug
 sudo apt -y install php-xml 
 sudo apt -y install php-zip
 echo $separateLine
-echo "[Script - PHP - $phpVersion] Installation de $phpVersion terminée"
+echo "[Script - PHP & Composer - $phpVersion] Installation de $phpVersion terminée"
 echo $separateLine
 php -v
 echo $separateLine
-echo "[Script - PHP - $phpVersion] Installation de Composer"
+echo "[Script - PHP & Composer - $phpVersion] Installation de Composer"
 echo $separateLine
 sudo apt install composer
+echo $separateLine
+echo "[Script - PHP & Composer - $phpVersion] Installation de Composer terminée"
+echo $separateLine
+composer --v
