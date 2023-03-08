@@ -1,6 +1,7 @@
 # Lancement du script
 echo "[Script - Ubuntu 22.04 - Dev. kits] Installation des kits de développement"
 echo $separateLine
+
 # Si l'utilisateur a choisi d'installer tous les kits de développement
 if [ $all = true ]
 then
@@ -10,9 +11,10 @@ then
     export java=true
     export nodejs=true
     export php_latest=true
-    export php_7_4=true
+    export php_7_4=false
     export ruby=true
 fi
+
 # Si l'utilisateur a choisi d'installer Python
 if [ $python = true ]
 then
@@ -21,6 +23,7 @@ then
     sudo apt install python3
     echo $separateLine
 fi
+
 # Si l'utilisateur a choisi d'installer C/C++
 if [ $c_cpp = true ]
 then
@@ -29,6 +32,7 @@ then
     sudo apt install gcc build-essential
     echo $separateLine
 fi
+
 # Si l'utilisateur a choisi d'installer C#
 if [ $csharp = true ]
 then
@@ -37,6 +41,7 @@ then
     sudo apt install mono-devel aspnetcore-runtime-6.0 dotnet-runtime-6.0
     echo $separateLine
 fi
+
 # Si l'utilisateur a choisi d'installer Java
 if [ $java = true ]
 then
@@ -45,6 +50,7 @@ then
     sudo apt install default-jdk
     echo $separateLine
 fi
+
 # Si l'utilisateur a choisi d'installer Node.js
 if [ $nodejs = true ]
 then
@@ -53,6 +59,7 @@ then
     sudo apt install nodejs
     echo $separateLine
 fi
+
 # Si l'utilisateur a choisi d'installer PHP
 if [ $php_latest = true ]
 then
@@ -67,6 +74,7 @@ then
     /bin/bash ./ubuntu_install_composer_with_php_7.4.sh
     echo $separateLine
 fi
+
 # Si l'utilisateur a choisi d'installer Ruby
 if [ $ruby = true ]
 then

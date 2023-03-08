@@ -1,29 +1,35 @@
+#!/bin/sh
+
+# Pack complet d'outils de ligne de commandes 
+# et de kits de développement pour Ubuntu 22.04.
+#
+# Path: ubuntu_install_full.sh
+#
 # Description : 
-# Ce script a pour but d'installer tous les outils
-# nécessaires au développement sur Ubuntu 22.04
-# selon les besoins de l'utilisateur.
-# Il installe les paquets et kits de développement suivants :
-# - les outils de ligne de commandes
-#   - de curl & wget (permet de gérer les téléchargements)
-#   - de nano (permet de gérer les fichiers)
-#   - de zip & unzip (permet de gérer les archives)
-#   - de git (permet de gérer les dépôts git)
-#   - de tree (permet de visualiser les dossiers sous forme d'arbre)
-#   - de libpcre3 (permet de gérer les expressions régulières)
-# - les kits de développement
-#   - de Python
-#   - de C / C++
-#   - de C#
-#   - de Java
-#   - de NodeJS
-#   - de PHP
-#   - de Ruby
+#   Ce script a pour but d'installer tous les outils
+#   nécessaires au développement sur Ubuntu 22.04
+#   selon les besoins de l'utilisateur.
+#   Il installe les paquets et kits de développement suivants :
+#   - les outils de ligne de commandes
+#       - de curl & wget (permet de gérer les téléchargements)
+#       - de nano (permet de gérer les fichiers)
+#       - de zip & unzip (permet de gérer les archives)
+#       - de git (permet de gérer les dépôts git)
+#       - de tree (permet de visualiser les dossiers sous forme d'arbre)
+#       - de libpcre3 (permet de gérer les expressions régulières)
+#   - les kits de développement
+#       - de Python
+#       - de C / C++
+#       - de C#
+#       - de Java
+#       - de NodeJS
+#       - de PHP
+#       - de Ruby
 
 # Ajout des variables nécessaires au script au terminal
 # pour pouvoir les utiliser dans les commandes
 export separateLine="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 
-#!/bin/sh
 # Lancement du script
 echo "[Script - Ubuntu 22.04] Installation de tous les outils nécessaires au développement"
 echo $separateLine
