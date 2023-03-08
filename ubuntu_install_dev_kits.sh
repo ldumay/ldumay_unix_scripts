@@ -51,12 +51,12 @@ then
     echo $separateLine
 fi
 
-# Si l'utilisateur a choisi d'installer Node.js
+# Si l'utilisateur a choisi d'installer NodeJS & NPM
 if [ $nodejs = true ]
 then
-    echo "==> Dev. kits - Installation de Node.js"
+    echo "==> Dev. kits - Installation de NodeJS & NPM"
     echo $separateLine
-    sudo apt install nodejs
+    sudo apt install nodejs npm
     echo $separateLine
 fi
 

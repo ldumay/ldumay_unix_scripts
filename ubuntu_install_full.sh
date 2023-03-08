@@ -22,7 +22,7 @@
 #       - de C / C++
 #       - de C#
 #       - de Java
-#       - de NodeJS
+#       - de NodeJS & NPM
 #       - de PHP
 #       - de Ruby
 
@@ -35,7 +35,7 @@ echo "[Script - Ubuntu 22.04] Installation de tous les outils nécessaires au d�
 echo $separateLine
 echo "====> Les outils installable via ce script sont les suivants :"
 echo "--> Les outils de ligne de commandes : curl / wget / nano /zip / unzip / git / tree / libpcre3"
-echo "--> Les kits de dév. : Python 3 / C / C++ / C# & .Net / Java / NodeJS / PHP (latest-8 ou 7.4) / Ruby"
+echo "--> Les kits de dév. : Python 3 / C / C++ / C# & .Net / Java / NodeJS & NPM / PHP (latest-8 ou 7.4) / Ruby"
 echo $separateLine
 echo ""
 echo "- Installer tous les outils ? (y/n)"
@@ -107,7 +107,7 @@ else
         then export java=true
     fi
     
-    echo "- Installer NodeJS ? (y/n)"
+    echo "- Installer NodeJS & NPM ? (y/n)"
     read choice
     if [ $choice = "y" ]
         then export nodejs=true

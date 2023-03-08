@@ -21,7 +21,7 @@ sudo apt install curl wget git tree nano zip unzip libpcre3
 echo $separateLine
 echo "[Script - PHP - $phpVersion] Nettoyage des précédentes versions de PHP"
 echo $separateLine
-sudo apt-get purge 'php*'
+sudo apt purge 'php*'
 echo $separateLine
 echo "[Script - PHP - $phpVersion] Installation de PHP $phpVersion"
 echo $separateLine
