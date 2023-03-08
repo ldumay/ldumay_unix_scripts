@@ -97,3 +97,4 @@ else
     # Vérification des choix de l'utilisateur
     /bin/bash ./ubuntu_install_packages.sh
     /bin/bash ./ubuntu_install_dev_kits.sh
+fi
