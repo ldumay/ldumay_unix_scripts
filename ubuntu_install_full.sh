@@ -23,6 +23,7 @@
 # pour pouvoir les utiliser dans les commandes
 export separateLine="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 
+#!/bin/sh
 # Lancement du script
 echo "[Script - Ubuntu 22.04] Installation de tous les outils nécessaires au développement"
 echo $separateLine
@@ -42,56 +43,84 @@ then
 else
     echo "- Installer curl & wget ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export curl_wget=true
+    if [ $choice = "y" ]
+        then export curl_wget=true
+    fi
     
     echo "- Installer nano ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export nano=true
+    if [ $choice = "y" ]
+        then export nano=true
+    fi
 
     echo "- Installer zip & unzip ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export zip_unzip=true
+    if [ $choice = "y" ]
+        then export zip_unzip=true
+    fi
 
     echo "- Installer git ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export git=true
-
+    if [ $choice = "y" ]
+        then export git=true
+    fi
+    
     echo "- Installer tree ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export tree=true
-    
+    if [ $choice = "y" ]
+        then export tree=true
+    fi
+        
     echo "- Installer libpcre3 ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export libpcre3=true
-
+    if [ $choice = "y" ]
+        then export libpcre3=true
+    fi
+    
     echo "- Installer Python 3 ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export python=true
-    
+    if [ $choice = "y" ]
+        then export python=true
+    fi
+        
     echo "- Installer C / C++ ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export c_cpp=true
-    
+    if [ $choice = "y" ]
+        then export c_cpp=true
+    fi
+       
     echo "- Installer C# & .Net ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export csharp=true
-
+    if [ $choice = "y" ]
+        then export csharp=true
+    fi
+    
     echo "- Installer Java ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export java=true
-
+    if [ $choice = "y" ]
+        then export java=true
+    fi
+    
     echo "- Installer NodeJS ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export nodejs=true
-
+    if [ $choice = "y" ]
+        then export nodejs=true
+    fi
+    
     echo "- Installer PHP (latest) ou PHP 7.4 ou aucun ? (1/2/3)"
     read choice
-    if [ $choice = "1" ] then export php_latest=true
-    if [ $choice = "2" ] then export php_7_4=true
+    if [ $choice = "1" ]
+        then export php_latest=true
+    fi
+    if [ $choice = "2" ]
+        then export php_7_4=true
+    fi
 
     echo "- Installer Ruby ? (y/n)"
     read choice
-    if [ $choice = "y" ] then export ruby=true
+    if [ $choice = "y" ]
+        then export ruby=true
+    fi
 
     echo $separateLine
     # Vérification des choix de l'utilisateur
