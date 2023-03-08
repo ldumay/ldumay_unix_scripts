@@ -1,26 +1,30 @@
 phpVersion="7.4"
+separateLine="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 echo "[Script - PHP - $phpVersion] Installation de PHP $phpVersion sur Ubuntu 22.04"
-echo "- - - - - - - - - - - - "
+echo $separateLine
 echo "[Script - PHP - $phpVersion] Mise à jour des dépôts"
-echo "- - - - - - - - - - - - "
+echo $separateLine
 sudo apt update && apt upgrade
-echo "[Script - PHP - $phpVersion] Ajout du dépôt de PHP $phpVersion"
-echo "- - - - - - - - - - - - "
+echo $separateLine
+echo "[Script - PHP - $phpVersion] Ajout du dépôt nécessaire de PHP $phpVersion"
+echo $separateLine
 sudo apt -y install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
+echo $separateLine
 echo "[Script - PHP - $phpVersion] Mise à jour des dépôts"
-echo "- - - - - - - - - - - - "
+echo $separateLine
 sudo apt update && apt upgrade
+echo $separateLine
 echo "[Script - PHP - $phpVersion] Installation des prérequis"
-echo "- - - - - - - - - - - - "
+echo $separateLine
 sudo apt install curl wget git tree nano zip unzip libpcre3
-echo "[Script - PHP - $phpVersion] Installation de Composer"
-sudo apt install composer
+echo $separateLine
 echo "[Script - PHP - $phpVersion] Nettoyage des précédentes versions de PHP"
-echo "- - - - - - - - - - - - "
+echo $separateLine
 sudo apt-get purge 'php*'
+echo $separateLine
 echo "[Script - PHP - $phpVersion] Installation de PHP $phpVersion"
-echo "- - - - - - - - - - - - "
+echo $separateLine
 sudo apt -y install php$phpVersion
 sudo apt -y install php$phpVersion-amqp
 sudo apt -y install php$phpVersion-apcu
@@ -49,6 +53,15 @@ sudo apt -y install php$phpVersion-tokenizer
 sudo apt -y install php$phpVersion-xdebug
 sudo apt -y install php$phpVersion-xml 
 sudo apt -y install php$phpVersion-zip
-echo "[Script - PHP - $phpVersion] Installation terminée"
-echo "- - - - - - - - - - - - "
+echo $separateLine
+echo "[Script - PHP - $phpVersion] Installation de $phpVersion terminée"
+echo $separateLine
 php -v
+echo $separateLine
+echo "[Script - PHP & Composer - $phpVersion] Installation de Composer"
+echo $separateLine
+sudo apt install composer
+echo $separateLine
+echo "[Script - PHP & Composer - $phpVersion] Installation de Composer terminée"
+echo $separateLine
+composer --version
