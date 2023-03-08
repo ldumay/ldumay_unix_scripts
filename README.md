@@ -20,6 +20,8 @@ Le script principal a pour but d'installer tous les outils nécessaires au déve
   - de PHP
   - de Ruby
 
+Pour les utilisers, cloner le git et effectuer commande ci-dessous.
+
 ### Installation
 
 Voici le script à lancer :
